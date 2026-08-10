@@ -1,0 +1,9 @@
+node_modules/
+dist/
+.build/
+.docs/
+*.tgz
+.pack-output/
+.pnpm-store/
+playwright-report/
+test-results/

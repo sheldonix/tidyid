@@ -1,0 +1,89 @@
+{
+  "name": "tidyid",
+  "version": "2.1.1",
+  "description": "A tiny, secure, and human-friendly ID generator for JavaScript.",
+  "keywords": [
+    "id",
+    "generator",
+    "random",
+    "secure",
+    "tiny",
+    "human-friendly",
+    "readable",
+    "csprng"
+  ],
+  "author": "sheldonix",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sheldonix/tidyid.git"
+  },
+  "homepage": "https://github.com/sheldonix/tidyid#readme",
+  "bugs": {
+    "url": "https://github.com/sheldonix/tidyid/issues"
+  },
+  "type": "module",
+  "bin": {
+    "tidyid": "bin/tidyid.js"
+  },
+  "types": "./dist/index.d.ts",
+  "browser": {
+    "./dist/index.js": "./dist/index.browser.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "browser": "./dist/index.browser.js",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "bin",
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=22.12"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "benchmark": "npm run build && node benchmark/benchmark.mjs",
+    "benchmark:browser": "npm run build && node benchmark/browser-runner.mjs",
+    "benchmark:memory": "npm run build && node --expose-gc benchmark/memory.mjs",
+    "check": "npm run typecheck && npm test && node scripts/check-size.mjs && npm run size:compressed && node scripts/check-exports.mjs",
+    "check:exports": "npm run build && node scripts/check-exports.mjs",
+    "docs:uniformity": "npm run build && node scripts/generate-uniformity.mjs",
+    "size:compressed": "size-limit",
+    "size": "npm run build && node scripts/check-size.mjs",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "npm run build && node --test test/*.test.js",
+    "prepack": "npm run build"
+  },
+  "packageManager": "npm@11.15.0",
+  "size-limit": [
+    {
+      "name": "tidyid",
+      "import": "{ tidyid }",
+      "path": "dist/index.browser.js",
+      "limit": "1.05 kB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/file": "^13.0.3",
+    "@size-limit/webpack": "^13.0.3",
+    "@types/node": "^26.2.0",
+    "esbuild": "0.28.2",
+    "nanoid": "6.0.1",
+    "playwright": "1.62.0",
+    "size-limit": "^13.0.3",
+    "typescript": "^7.0.2"
+  }
+}
