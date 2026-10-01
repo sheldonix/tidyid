@@ -1,11 +1,17 @@
-# TidyID
+<p align="center">
+  <img src="media/logo-128.png" alt="TidyID" height="64">
+</p>
 
-[English](https://github.com/sheldonix/tidyid/blob/main/README.md) | [简体中文](https://github.com/sheldonix/tidyid/blob/main/docs/README_zh-CN.md) | [日本語](https://github.com/sheldonix/tidyid/blob/main/docs/README_ja.md) | 한국어 | [Русский](https://github.com/sheldonix/tidyid/blob/main/docs/README_ru.md)
+<p align="center">
+  <a href="https://github.com/sheldonix/tidyid/blob/main/README.md">English</a> | <a href="https://github.com/sheldonix/tidyid/blob/main/docs/README_zh-CN.md">简体中文</a> | <a href="https://github.com/sheldonix/tidyid/blob/main/docs/README_ja.md">日本語</a> | 한국어 | <a href="https://github.com/sheldonix/tidyid/blob/main/docs/README_ru.md">Русский</a>
+</p>
 
-[![npm version](https://img.shields.io/npm/v/tidyid.svg)](https://www.npmjs.com/package/tidyid)
-[![Node.js](https://img.shields.io/node/v/tidyid.svg)](https://www.npmjs.com/package/tidyid)
-[![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/sheldonix/tidyid/blob/main/LICENSE)
+<p align="center">
+  <a href="https://www.npmjs.com/package/tidyid"><img src="https://img.shields.io/npm/v/tidyid.svg" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/tidyid"><img src="https://img.shields.io/node/v/tidyid.svg" alt="Node.js"></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg?logo=typescript&amp;logoColor=white" alt="TypeScript"></a>
+  <a href="https://github.com/sheldonix/tidyid/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License"></a>
+</p>
 
 JavaScript를 위한 작고 안전하며 사람이 사용하기 편한 ID 생성기입니다.
 
@@ -44,7 +50,7 @@ TidyID를 전역으로 설치합니다.
 npm i -g tidyid
 ```
 
-그런 다음 ID를 생성합니다.
+ID를 생성합니다.
 
 ```sh
 tidyid
@@ -106,7 +112,6 @@ xr3 fc9 xy2
 
   *대문자 허용 모드(`allowUppercase = true`): 10,000,000개의 3자리 ID에서 관측한 문자와 숫자 빈도는 기대되는 균일 분포에 가깝습니다.*
 
-- **안전한 실패** 난수 소스 오류는 호출자에게 그대로 전달됩니다. TidyID는 예측 가능한 난수 생성기로 대체하지 않습니다.
 - **충돌 고려** 규모에 맞는 길이를 선택하면 충돌 확률을 극히 낮게 만들 수 있습니다. 절대적인 고유성이 필요하면 데이터베이스의 `PRIMARY KEY` 또는 `UNIQUE` 제약 조건을 사용하세요.
 
   > **기본 모드 (`allowUppercase = false`)**

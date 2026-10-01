@@ -105,7 +105,7 @@ const defaultSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="680" height="
   <title id="title">TidyID character distribution with allowUppercase set to false</title>
   <desc id="description">Observed frequency as a percentage of expected uniform frequency for ${idCountLabel} calls to tidyid with length 3 and allowUppercase set to false.</desc>${style}
   <text x="20" y="24" font-size="15" font-weight="600">Observed character frequency · allowUppercase = false</text>
-  <text class="muted" x="20" y="43">${idCountLabel} × tidyid(3) · expected = 100%</text>
+  <text class="muted" x="20" y="43">${idCountLabel} × tidyid(3)</text>
   <text x="54" y="67" font-weight="600">Letters (lowercase) · ${letterSampleLabel} samples</text>
   <text x="394" y="67" font-weight="600">Digits · ${idCountLabel} samples</text>${grid(54, 340, 87, 197, defaultSpan)}
   <line class="grid" x1="394" y1="87" x2="660" y2="87"/>
@@ -140,7 +140,7 @@ const uppercaseSvg = `<svg xmlns="http://www.w3.org/2000/svg" width="680" height
   <title id="title">TidyID character distribution with allowUppercase set to true</title>
   <desc id="description">Observed frequency as a percentage of expected uniform frequency for ${letterSampleLabel} letter samples and ${idCountLabel} digit samples from calls to tidyid with length 3 and allowUppercase set to true.</desc>${style}
   <text x="20" y="24" font-size="15" font-weight="600">Observed character frequency · allowUppercase = true</text>
-  <text class="muted" x="20" y="43">${idCountLabel} × tidyid(3, true) · expected = 100%</text>
+  <text class="muted" x="20" y="43">${idCountLabel} × tidyid(3, true)</text>
   <text x="54" y="67" font-weight="600">Letters (uppercase + lowercase) · ${letterSampleLabel} samples</text>
   <text x="535" y="67" font-weight="600">Digits · ${idCountLabel} samples</text>${grid(54, 520, 87, 197, uppercaseSpan)}
   <line class="grid" x1="550" y1="87" x2="660" y2="87"/>

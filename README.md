@@ -1,11 +1,17 @@
-# TidyID
+<p align="center">
+  <img src="docs/media/logo-128.png" alt="TidyID" height="64">
+</p>
 
-English | [简体中文](https://github.com/sheldonix/tidyid/blob/main/docs/README_zh-CN.md) | [日本語](https://github.com/sheldonix/tidyid/blob/main/docs/README_ja.md) | [한국어](https://github.com/sheldonix/tidyid/blob/main/docs/README_ko.md) | [Русский](https://github.com/sheldonix/tidyid/blob/main/docs/README_ru.md)
+<p align="center">
+  English | <a href="https://github.com/sheldonix/tidyid/blob/main/docs/README_zh-CN.md">简体中文</a> | <a href="https://github.com/sheldonix/tidyid/blob/main/docs/README_ja.md">日本語</a> | <a href="https://github.com/sheldonix/tidyid/blob/main/docs/README_ko.md">한국어</a> | <a href="https://github.com/sheldonix/tidyid/blob/main/docs/README_ru.md">Русский</a>
+</p>
 
-[![npm version](https://img.shields.io/npm/v/tidyid.svg)](https://www.npmjs.com/package/tidyid)
-[![Node.js](https://img.shields.io/node/v/tidyid.svg)](https://www.npmjs.com/package/tidyid)
-[![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/sheldonix/tidyid/blob/main/LICENSE)
+<p align="center">
+  <a href="https://www.npmjs.com/package/tidyid"><img src="https://img.shields.io/npm/v/tidyid.svg" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/tidyid"><img src="https://img.shields.io/node/v/tidyid.svg" alt="Node.js"></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg?logo=typescript&amp;logoColor=white" alt="TypeScript"></a>
+  <a href="https://github.com/sheldonix/tidyid/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License"></a>
+</p>
 
 A tiny, secure, and human-friendly ID generator for JavaScript.
 
@@ -44,7 +50,7 @@ Install TidyID globally:
 npm i -g tidyid
 ```
 
-Then generate an ID:
+Generate IDs:
 
 ```sh
 tidyid
@@ -108,7 +114,6 @@ Errors: `InvalidIdLengthError`, `InvalidIdFormatError`.
 
   *Uppercase-enabled mode (`allowUppercase = true`): observed letter and digit frequencies from 10,000,000 generated 3-character IDs stay close to the expected uniform distribution.*
 
-- **Fail closed** Random-source failures are propagated. TidyID never falls back to predictable randomness.
 - **Collision-aware** Choose a length for your scale to make collisions extremely unlikely. Use a database `PRIMARY KEY` or `UNIQUE` constraint when absolute uniqueness must be enforced.
 
   > **Default mode (`allowUppercase = false`)**

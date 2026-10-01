@@ -1,11 +1,17 @@
-# TidyID
+<p align="center">
+  <img src="media/logo-128.png" alt="TidyID" height="64">
+</p>
 
-[English](https://github.com/sheldonix/tidyid/blob/main/README.md) | [简体中文](https://github.com/sheldonix/tidyid/blob/main/docs/README_zh-CN.md) | [日本語](https://github.com/sheldonix/tidyid/blob/main/docs/README_ja.md) | [한국어](https://github.com/sheldonix/tidyid/blob/main/docs/README_ko.md) | Русский
+<p align="center">
+  <a href="https://github.com/sheldonix/tidyid/blob/main/README.md">English</a> | <a href="https://github.com/sheldonix/tidyid/blob/main/docs/README_zh-CN.md">简体中文</a> | <a href="https://github.com/sheldonix/tidyid/blob/main/docs/README_ja.md">日本語</a> | <a href="https://github.com/sheldonix/tidyid/blob/main/docs/README_ko.md">한국어</a> | Русский
+</p>
 
-[![npm version](https://img.shields.io/npm/v/tidyid.svg)](https://www.npmjs.com/package/tidyid)
-[![Node.js](https://img.shields.io/node/v/tidyid.svg)](https://www.npmjs.com/package/tidyid)
-[![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/sheldonix/tidyid/blob/main/LICENSE)
+<p align="center">
+  <a href="https://www.npmjs.com/package/tidyid"><img src="https://img.shields.io/npm/v/tidyid.svg" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/tidyid"><img src="https://img.shields.io/node/v/tidyid.svg" alt="Node.js"></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg?logo=typescript&amp;logoColor=white" alt="TypeScript"></a>
+  <a href="https://github.com/sheldonix/tidyid/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License"></a>
+</p>
 
 Компактный, безопасный и удобный для человека генератор ID для JavaScript.
 
@@ -44,7 +50,7 @@ pnpm add tidyid
 npm i -g tidyid
 ```
 
-Затем создайте ID:
+Создайте ID:
 
 ```sh
 tidyid
@@ -106,7 +112,6 @@ xr3 fc9 xy2
 
   *Режим с прописными буквами (`allowUppercase = true`): частоты букв и цифр в 10 000 000 трёхсимвольных ID близки к ожидаемому равномерному распределению.*
 
-- **Безопасный отказ** Ошибки источника случайности передаются вызывающему коду. TidyID никогда не переключается на предсказуемый генератор.
 - **Контроль коллизий** Выберите длину, соответствующую масштабу данных, чтобы сделать вероятность коллизии крайне малой. Если нужна абсолютная уникальность, используйте ограничение `PRIMARY KEY` или `UNIQUE` в базе данных.
 
   > **Режим по умолчанию (`allowUppercase = false`)**

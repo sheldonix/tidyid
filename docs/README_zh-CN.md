@@ -1,11 +1,17 @@
-# TidyID
+<p align="center">
+  <img src="media/logo-128.png" alt="TidyID" height="64">
+</p>
 
-[English](https://github.com/sheldonix/tidyid/blob/main/README.md) | 简体中文 | [日本語](https://github.com/sheldonix/tidyid/blob/main/docs/README_ja.md) | [한국어](https://github.com/sheldonix/tidyid/blob/main/docs/README_ko.md) | [Русский](https://github.com/sheldonix/tidyid/blob/main/docs/README_ru.md)
+<p align="center">
+  <a href="https://github.com/sheldonix/tidyid/blob/main/README.md">English</a> | 简体中文 | <a href="https://github.com/sheldonix/tidyid/blob/main/docs/README_ja.md">日本語</a> | <a href="https://github.com/sheldonix/tidyid/blob/main/docs/README_ko.md">한국어</a> | <a href="https://github.com/sheldonix/tidyid/blob/main/docs/README_ru.md">Русский</a>
+</p>
 
-[![npm version](https://img.shields.io/npm/v/tidyid.svg)](https://www.npmjs.com/package/tidyid)
-[![Node.js](https://img.shields.io/node/v/tidyid.svg)](https://www.npmjs.com/package/tidyid)
-[![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/sheldonix/tidyid/blob/main/LICENSE)
+<p align="center">
+  <a href="https://www.npmjs.com/package/tidyid"><img src="https://img.shields.io/npm/v/tidyid.svg" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/tidyid"><img src="https://img.shields.io/node/v/tidyid.svg" alt="Node.js"></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg?logo=typescript&amp;logoColor=white" alt="TypeScript"></a>
+  <a href="https://github.com/sheldonix/tidyid/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License"></a>
+</p>
 
 面向 JavaScript 的小巧、安全且人性化的 ID 生成器。
 
@@ -44,7 +50,7 @@ pnpm add tidyid
 npm i -g tidyid
 ```
 
-然后生成 ID：
+生成 ID：
 
 ```sh
 tidyid
@@ -106,7 +112,6 @@ xr3 fc9 xy2
 
   *允许大写模式（`allowUppercase = true`）：从 10,000,000 个 3 字符 ID 统计的字母和数字频率接近预期均匀分布。*
 
-- **失败即关闭** 随机源错误会直接向上传播；TidyID 永远不会回退到可预测随机源。
 - **碰撞可控** 根据数据规模选择长度，可使碰撞概率极低。必须保证绝对唯一时，请使用数据库 `PRIMARY KEY` 或 `UNIQUE` 约束。
 
   > **默认模式（`allowUppercase = false`）**

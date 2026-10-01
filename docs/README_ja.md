@@ -1,11 +1,17 @@
-# TidyID
+<p align="center">
+  <img src="media/logo-128.png" alt="TidyID" height="64">
+</p>
 
-[English](https://github.com/sheldonix/tidyid/blob/main/README.md) | [简体中文](https://github.com/sheldonix/tidyid/blob/main/docs/README_zh-CN.md) | 日本語 | [한국어](https://github.com/sheldonix/tidyid/blob/main/docs/README_ko.md) | [Русский](https://github.com/sheldonix/tidyid/blob/main/docs/README_ru.md)
+<p align="center">
+  <a href="https://github.com/sheldonix/tidyid/blob/main/README.md">English</a> | <a href="https://github.com/sheldonix/tidyid/blob/main/docs/README_zh-CN.md">简体中文</a> | 日本語 | <a href="https://github.com/sheldonix/tidyid/blob/main/docs/README_ko.md">한국어</a> | <a href="https://github.com/sheldonix/tidyid/blob/main/docs/README_ru.md">Русский</a>
+</p>
 
-[![npm version](https://img.shields.io/npm/v/tidyid.svg)](https://www.npmjs.com/package/tidyid)
-[![Node.js](https://img.shields.io/node/v/tidyid.svg)](https://www.npmjs.com/package/tidyid)
-[![TypeScript](https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/sheldonix/tidyid/blob/main/LICENSE)
+<p align="center">
+  <a href="https://www.npmjs.com/package/tidyid"><img src="https://img.shields.io/npm/v/tidyid.svg" alt="npm version"></a>
+  <a href="https://www.npmjs.com/package/tidyid"><img src="https://img.shields.io/node/v/tidyid.svg" alt="Node.js"></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-types%20included-3178C6.svg?logo=typescript&amp;logoColor=white" alt="TypeScript"></a>
+  <a href="https://github.com/sheldonix/tidyid/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="MIT License"></a>
+</p>
 
 JavaScript 向けの小さく、安全で、人にやさしい ID ジェネレーターです。
 
@@ -44,7 +50,7 @@ TidyID をグローバルインストールします。
 npm i -g tidyid
 ```
 
-次に、ID を生成します。
+ID を生成します。
 
 ```sh
 tidyid
@@ -106,7 +112,6 @@ xr3 fc9 xy2
 
   *大文字許可モード（`allowUppercase = true`）：10,000,000 個の 3 文字 ID から観測した英字と数字の頻度は、期待される一様分布に近い値です。*
 
-- **安全側に失敗** 乱数源のエラーはそのまま伝播します。TidyID が予測可能な乱数へフォールバックすることはありません。
 - **衝突を考慮** 規模に合った長さを選べば、衝突確率を極めて低くできます。絶対的な一意性が必要な場合は、データベースの `PRIMARY KEY` または `UNIQUE` 制約を使用してください。
 
   > **デフォルトモード（`allowUppercase = false`）**
